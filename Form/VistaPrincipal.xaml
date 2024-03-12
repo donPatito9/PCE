@@ -1,0 +1,19 @@
+﻿<Window x:Class="Evaluacion_PCE.Form.VistaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Evaluacion_PCE.Form"
+        mc:Ignorable="d"
+        Title="VistaPrincipal" Height="450" Width="800" Activated="Window_Activated">
+    <Grid>
+        <DockPanel LastChildFill="False">
+            <Menu x:Name="mnPrincipal" Height="20" DockPanel.Dock="Top" IsMainMenu="True" Width="Auto">
+                <MenuItem Header="Agregar Equipo" x:Name="btnAgregar" Click="btnAgregar_Click"/>
+                <MenuItem Header="Listar todos" x:Name="btnListar" Click="btnListar_Click"/>
+                <MenuItem Header="Informacion" x:Name="btnAcercaDe" Click="btnAcercaDe_Click"/>
+            </Menu>
+            <DataGrid Width="799" x:Name="dgVistaPrincipal"/>
+        </DockPanel>
+    </Grid>
+</Window>

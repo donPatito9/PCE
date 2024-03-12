@@ -1,0 +1,33 @@
+﻿<Window x:Class="Evaluacion_PCE.Form.Actualizar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Evaluacion_PCE.Form"
+        mc:Ignorable="d"
+        Title="Actualizar" Height="450" Width="800">
+
+    <Grid Margin="0,0,-10,-6">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblId" Content="Ingrese Id" HorizontalAlignment="Left" Margin="76,68,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblNombreEquipo" Content="Ingrese Nombre del equipo" HorizontalAlignment="Left" Margin="74,99,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblCantidadJugadores" Content="Ingrese Cantidad De Jugadores" HorizontalAlignment="Left" Margin="75,128,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblNombreDT" Content="Ingrese Nombre DT" HorizontalAlignment="Left" Margin="75,163,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblTipoEquipo" Content="Ingrese Tipo de equipo" HorizontalAlignment="Left" Margin="75,194,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblCapitanEquipo" Content="Ingrese Nombre Capitan" HorizontalAlignment="Left" Margin="75,228,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblTieneSub21" Content="Tiene Sub 21" HorizontalAlignment="Left" Margin="77,278,0,0" VerticalAlignment="Top"/>
+
+            <Button x:Name="btnActualizarEquipo" Content="Actualizar Equipo" HorizontalAlignment="Left" Margin="74,334,0,0" VerticalAlignment="Top" Click="btnActualizarEquipo_Click"/>
+
+            <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="300,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="CheckTextInput"/>
+            <TextBox x:Name="txtNombreEquipo" HorizontalAlignment="Left" Margin="300,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtCantidadJugadores" HorizontalAlignment="Left" Margin="300,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtNombreDT" HorizontalAlignment="Left" Margin="300,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtTipoEquipo" HorizontalAlignment="Left" Margin="300,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtCapitanEquipo" HorizontalAlignment="Left" Margin="300,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <CheckBox x:Name="chkTieneSub21" Content="Sub21" HorizontalAlignment="Left" Margin="300,284,0,0" VerticalAlignment="Top" Width="76" Height="15"/>
+        </Grid>
+</Window>
